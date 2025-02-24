@@ -47,4 +47,4 @@ curl --location --request POST 'http://localhost:3005/api/url-processing/sendReq
 --header 'X-API-Key: {{token}}'
 
 ### High level diagram
-![High Level diagram](files/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-02-23%20%D0%B2%2015.11.50.png)
+![Снимок экрана 2025-02-24 в 09.45.19.png](files/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-02-24%20%D0%B2%2009.45.19.png)
