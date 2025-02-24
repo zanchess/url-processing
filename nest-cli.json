@@ -10,7 +10,7 @@
   "monorepo": true,
   "root": "apps/url-processing-api",
   "projects": {
-    "coin-flip-api": {
+    "url-processing-api": {
       "type": "application",
       "root": "apps/url-processing-api",
       "entryFile": "main",
