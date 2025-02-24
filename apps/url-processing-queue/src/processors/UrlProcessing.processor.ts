@@ -10,8 +10,8 @@ import { UrlProcessingRepository } from '@app/url-processing-shared/core/UrlProc
   limiter: { max: 10, duration: 1000 },
   concurrency: 5,
 })
-export class RequestProcessor extends WorkerHost {
-  private readonly logger = new Logger(RequestProcessor.name);
+export class UrlRequestProcessor extends WorkerHost {
+  private readonly logger = new Logger(UrlRequestProcessor.name);
 
   constructor(
     private readonly urlProcessingRepository: UrlProcessingRepository,

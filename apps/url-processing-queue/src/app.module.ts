@@ -10,8 +10,8 @@ import { EventEmitterModule } from '@nestjs/event-emitter';
 import { HttpModule } from '@nestjs/axios';
 import { DatabaseModule } from '@app/url-processing-shared/database/database.module';
 import { DatabaseService } from '@app/url-processing-shared/database/database.service';
-import { RequestProcessor } from './processors/UrlProcessing.processor';
 import { UrlProcessingModule } from '@app/url-processing-shared/core/UrlProcessing/UrlProcessing.module';
+import { UrlRequestProcessor } from './processors';
 
 @Module({
   imports: [
@@ -61,7 +61,7 @@ import { UrlProcessingModule } from '@app/url-processing-shared/core/UrlProcessi
     HttpModule,
     UrlProcessingModule,
   ],
-  providers: [RequestProcessor],
+  providers: [UrlRequestProcessor],
   controllers: [],
 })
 export class AppModule {}
