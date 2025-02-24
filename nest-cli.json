@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/url-processing-api/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/url-processing-api/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/url-processing-api",
+  "projects": {
+    "coin-flip-api": {
+      "type": "application",
+      "root": "apps/url-processing-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/url-processing-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/url-processing-api/tsconfig.app.json"
+      }
+    },
+    "url-processing-queue": {
+      "type": "application",
+      "root": "apps/url-processing-queue",
+      "entryFile": "main",
+      "sourceRoot": "apps/url-processing-queue/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/url-processing-queue/tsconfig.app.json"
+      }
+    },
+    "url-processing-shared": {
+      "type": "library",
+      "root": "libs/url-processing-shared",
+      "entryFile": "index",
+      "sourceRoot": "libs/url-processing-shared/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/url-processing-shared/tsconfig.lib.json"
+      }
+    }
+  }
+}
