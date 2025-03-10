@@ -25,7 +25,7 @@ export class UrlRequestProcessor extends WorkerHost {
 
     if (name === 'send-request') {
       const data = job.data as UrlProcessing;
-      const { id, url } = data;
+      const { url, id } = data;
       try {
         const response = await axios.get(url, { timeout: 5000 });
         await this.urlProcessingRepository.updateUrl(id, {
